@@ -1,0 +1,17 @@
+apply plugin: 'com.android.application'
+apply from: '../common.gradle'
+
+android {
+    compileSdkVersion COMPILE_SDK_VERSION as int
+    dataBinding {
+        enabled = true
+    }
+    defaultConfig {
+
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:+'
+    implementation 'androidx.constraintlayout:constraintlayout:+'
+}

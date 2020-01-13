@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CameraXDemo</string>
+    <string name="test">0123456789</string>
+    <string name="test2">一二三四五六七八九十 one two three four five six seven eight nine ten</string>
+    <string name="test3">超出部分被隐藏在屏幕之外可以逐个计算每个字符的宽度通过一定的算法将超出部分被隐藏在屏幕之外可以逐个计算每个字符的宽度通过一定的算法将</string>
+    <string name="test4">超出部分被隐藏在屏幕</string>
+</resources>
