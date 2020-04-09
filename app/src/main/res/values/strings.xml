@@ -1,8 +1,8 @@
-<resources >
+<resources>
     <string name="app_name">CameraXDemo</string>
     <string name="test">0123456789</string>
     <string name="test2">一二三四五六七八九十 one two three four five six seven eight nine ten</string>
     <string name="test3">超出部分被隐藏在屏幕之外可以逐个计算每个字符的宽度通过一定的算法将超出部分被隐藏在屏幕之外可以逐个计算每个字符的宽度通过一定的算法将</string>
     <string name="test4">超出部分被隐藏在屏幕</string>
-    <string name="ct" >8.\t\t\t\t\t\tThe (main) {security} flaw@ with# my% website 😀 was probably^ 11 55 [the] simple fact that (the) username and “password \"were\" exactly” [the same... Granted-the I did realize that] this wasn highly intelligent but I didn \'have\' the power to change: it myself, and I didn think it really mattered enough to bother about it. Having an identical username and password is a massive "no-no" in computer security. Your username and password should not even be related along the same line of thought? A username of "Dragon" and a password of "Fire" is not a secure combination.</string>
+    <string name="ct">8.\t\t\t\t\t\tThe (main) {security} flaw@ with# my% website 😀 was probably^ 11 55 [the] simple fact that (the) username and “password \"were\" exactly” [the same... Granted-the I did realize that] this wasn highly intelligent but I didn \'have\' the power to change: it myself, and I didn think it really mattered enough to bother about it. Having an identical username and password is a massive "no-no" in computer security. Your username and password should not even be related along the same line of thought? A username of "Dragon" and a password of "Fire" is not a secure combination.</string>
 </resources>
