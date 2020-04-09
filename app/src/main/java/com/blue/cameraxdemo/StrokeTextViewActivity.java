@@ -22,7 +22,9 @@ import android.text.TextPaint;
 import android.text.style.AbsoluteSizeSpan;
 import android.text.style.ForegroundColorSpan;
 import android.text.style.ImageSpan;
+import android.util.DisplayMetrics;
 import android.util.Log;
+import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -75,10 +77,10 @@ public class StrokeTextViewActivity extends AppCompatActivity {
         String s = textView.getText().toString();
         SpannableString spannableString = new SpannableString(s);
 
-        StrokeSpan strokeSpan = new StrokeSpan(color1, color2,600);
-        StrokeSpan strokeSpan2 = new StrokeSpan(color2, color1,600);
+        StrokeSpan strokeSpan = new StrokeSpan(color1, color2,textView.getTextSize());
+//        StrokeSpan strokeSpan2 = new StrokeSpan(color2, color1);
 
-//        spannableString.setSpan(strokeSpan, 0, 20, Spannable.SPAN_INCLUSIVE_EXCLUSIVE);
+        spannableString.setSpan(strokeSpan, 3, 21, Spannable.SPAN_INCLUSIVE_EXCLUSIVE);
 //        spannableString.setSpan(strokeSpan2, 20, 39, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
 
 
@@ -86,7 +88,7 @@ public class StrokeTextViewActivity extends AppCompatActivity {
 //        spannableString.setSpan(new AbsoluteSizeSpan(60), 20, 40, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
 //        // 设置字体前景色
 //        spannableString.setSpan(new ForegroundColorSpan(Color.MAGENTA), 20, 40, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
-
+//
 //        spannableString.setSpan(new ImageSpan(getDrawable(R.drawable.cover11)){
 //            @Override
 //            public int getSize(@NonNull Paint paint, CharSequence text, int start, int end, @Nullable Paint.FontMetricsInt fm) {
@@ -97,7 +99,7 @@ public class StrokeTextViewActivity extends AppCompatActivity {
 //            @Override
 //            public void draw(@NonNull Canvas canvas, CharSequence text, int start, int end, float x, int top, int y, int bottom, @NonNull Paint pt) {
 //                Log.v("TAG","----- text = "+text+"  x="+x+"  y="+y);
-////                super.draw(canvas, text, start, end, x, top, y, bottom, paint);
+//                super.draw(canvas, text, start, end, x, top, y, bottom, paint);
 //                /**
 //                 * 描外层
 //                 */
@@ -117,17 +119,22 @@ public class StrokeTextViewActivity extends AppCompatActivity {
 //                paint.setStyle(Paint.Style.FILL);
 //                paint.setFakeBoldText(false);
 //                canvas.drawText(text, start, end, x, y, paint);
-//                //StaticLayout.Builder.obtain(text,start,end,paint,600).build().draw(canvas);
+//                StaticLayout staticLayout= StaticLayout.Builder.obtain(text, 0, text.length()-1, paint, 1200).build();
+//                staticLayout.draw(canvas);
 //            }
 //        }, 0, 21, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
 
-        ForegroundColorSpan redSpan = new ForegroundColorSpan(Color.RED);
-        ForegroundColorSpan whiteSpan = new ForegroundColorSpan(Color.WHITE);
-        spannableString.setSpan(redSpan, 0, 1, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
-        spannableString.setSpan(whiteSpan, 1, 2, Spannable.SPAN_INCLUSIVE_INCLUSIVE);
+//        ForegroundColorSpan redSpan = new ForegroundColorSpan(Color.RED);
+//        ForegroundColorSpan whiteSpan = new ForegroundColorSpan(Color.WHITE);
+//        spannableString.setSpan(redSpan, 0, 1, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+//        spannableString.setSpan(whiteSpan, 1, 2, Spannable.SPAN_INCLUSIVE_INCLUSIVE);
+
         textView.setText(spannableString);
 
+
         myTextView.setmMyColor(color1,color2);
+        myTextView.setText(R.string.test3);
+
     }
 
 }
